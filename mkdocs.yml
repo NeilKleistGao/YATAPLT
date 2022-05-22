@@ -1,0 +1,80 @@
+site_name: YATAPLT
+docs_dir: src
+site_dir: docs
+site_url: https://neilkleistgao.github.io/YATAPLT/
+strict: false
+
+theme:
+  name: material
+  language: 'zh'
+  include_search_page: false
+  palette:
+    primary: black
+    accent: blue
+  features:
+    - navigation.tabs
+    - navigation.top
+extra:
+  copyright: '<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a> 和 <a href="https://github.com/zTrix/sata-license">SATA</a>'
+  pagetime: 'on'
+  manifest: 'manifest.webmanifest'
+  githash: ''
+
+extra_css:
+  - '_static/css/extra.css?v=13'
+
+extra_javascript:
+  - '_static/js/extra.js?v=16'
+  - 'https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+nav:
+  - 简介:
+    - Getting Started: index.md
+  - 导论:
+    - 第一章：导论: part0/chapter1.md
+  - 第一部分：无类型系统:
+    - 第三章：无类型的算术表达式: part1/chapter3.md
+  - 第二部分：简单类型:
+    - 第八章：有类型的算术表达式: part2/chapter8.md
+  - 第三部分：子类型化:
+    - 第十五章：子类型化: part3/chapter15.md
+  - 第四部分：递归类型:
+    - 第二十章：递归类型: part4/chapter20.md
+  - 第五部分：多态:
+    - 第二十二章：类型重构: part5/chapter22.md
+  - 第六部分：高阶系统:
+    - 第二十九章：类型算子与kinding关系: part6/chapter29.md
